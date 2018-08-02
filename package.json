@@ -1,0 +1,38 @@
+{
+  "name": "random_gamer",
+  "version": "1.0.0",
+  "description": "generate a random gamer",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/random_gamer.test.js",
+    "coverage": "istanbul cover --handle-sigint bin/www & sleep 5 && mocha -b test/routes/* --no-timeouts -b & wait",
+    "report": "open ./coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixw1994/random_gamer.git"
+  },
+  "keywords": [
+    "random",
+    "hash"
+  ],
+  "author": "leexw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lixw1994/random_gamer/issues"
+  },
+  "homepage": "https://github.com/lixw1994/random_gamer#readme",
+  "dependencies": {
+    "lodash": "4.14.0",
+    "log4js": "0.6.38",
+    "uuid": "2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.5.0",
+    "mocha-minimalist-reporter": "^1.1.0",
+    "should": "^10.0.0",
+    "supertest": "^1.2.0"
+  }
+}
